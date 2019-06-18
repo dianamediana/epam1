@@ -1,0 +1,55 @@
+@media (max-width:975px) {
+    body{
+        background-color: whitesmoke;
+    }
+    header{
+    
+    width: 100%;
+    margin: 0 auto;
+}
+    main{
+     width: 100%;
+    margin: 0 auto;
+}
+    .section1{
+	width: 220px;
+	float: left;
+	margin-right: 6%;
+}
+    .section1:last-child{
+	
+	margin-right: 0;
+}
+    #footercontent{
+	width: 100%;
+	margin: 0 auto;
+}
+    nav{
+        height: 100%;
+    }
+    
+}
+@media (max-width:780px) {
+    .all{
+        display: none;
+    }
+    
+    iframe{
+        width: 300px;
+    }
+    #header img{
+        display: none;
+    }
+    nav{
+        height: 130px;
+    }
+    
+    @media (max-width:620px) {
+    
+    nav{
+        display: none;
+    }
+        .menu2{
+            display: block;
+        }
+}
