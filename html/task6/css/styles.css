@@ -1,0 +1,25 @@
+.form {
+    width: 300px;
+    background-color:beige;
+    border: 1px solid black;
+    height: 30px;
+    position: relative;
+}
+
+button{
+    background: url(https://img.icons8.com/ios-glyphs/20/000000/right3.png) no-repeat 50% 50% ;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+input[type=search]{
+    height: 30px;
+    width: 270px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    line-height: 30px;
+}
