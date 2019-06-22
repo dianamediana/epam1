@@ -1,6 +1,12 @@
 main{
-    width: 340px;
+    width: 768px;
     margin: 0 auto;
+}
+
+.all{
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: 340px 340px;
 }
 
 .grid{
@@ -10,6 +16,7 @@ main{
     grid-template-columns: repeat(10, 32px);
     grid-gap: 2px;
         position: relative;
+    margin-top: 100px;
 }
 .grid div{
     background-color: darkslategray;
@@ -18,7 +25,7 @@ main{
     
 }
 .cube{
-    background-image: url(../media/cube.png);
+    background: url(../media/cube.png) 50% 50%;
     position: absolute;
     top: 0;
     
@@ -27,4 +34,127 @@ main{
     width: 66px;
     z-index: 2;
     background-repeat: no-repeat;
+}
+
+.sec2{
+    display: grid;
+    height: 250px;
+  grid-template-areas: "a1 a2 . a3 . a4 a5"
+                       "a6 a6 . a3 a7 a8 a8"
+                       "a6 a6 . a9 . a8 a8"
+                        "a10 a10 . a9 . a11 a11"
+                        "a10 a10 a12 a13 a14 a11 a11"
+      
+      ;
+  grid-template-rows: 25px 35px 1fr 20px 40px;
+  grid-template-columns: 35px 35px 45px 1fr 40px 35px 35px;
+    grid-gap: 4px;
+}
+.sec2 div{
+    background-color: #151515;
+    border-radius: 3% ;
+    position: relative;
+}
+.a1{
+    grid-area: a1;
+}
+.a2{
+    grid-area: a2;
+}
+.a3{
+    grid-area: a3;
+    background: url(../media/crown.jpg) no-repeat 50% 50%;
+    
+}
+.a4{
+    grid-area: a4;
+}
+.a5{
+    grid-area: a5;
+    
+}
+.a6{
+    grid-area: a6;
+    background: url(../media/sword.png) no-repeat 50% 50%;
+    
+}
+.a6:hover{
+   box-shadow: inset 200px 20px rgba(255,0,0,0.4);   
+}
+.a7{
+    grid-area: a7;
+    background: url(../media/coulomb.png) no-repeat 50% 50%;
+}
+
+.a8{
+    grid-area: a8;
+    background: url(../media/sword.png) no-repeat 50% 50% ;
+}
+.a8:hover{
+   box-shadow: inset 200px 20px rgba(255,0,0,0.4);   
+}
+
+.a9{
+    grid-area: a9;
+    background: url(../media/armor.png) no-repeat 50% 50%;
+}
+.a10{
+    grid-area: a10;
+    background: url(../media/gloves.png) no-repeat 50% 50%;
+}
+.a11{
+    grid-area: a11;
+    background: url(../media/shoes.png) no-repeat 50% 50%;
+}
+.a12{
+    grid-area: a12;
+    background: url(../media/gold-ring.png) no-repeat 50% 50%;
+}
+.a13{
+    grid-area: a13;
+    background: url(../media/belt.png) no-repeat 50% 50%;
+}
+.a14{
+    grid-area: a14;
+    background: url(../media/gold-ring.png) no-repeat 50% 50%;
+}
+
+
+
+
+.radio {
+  position: absolute;
+  opacity: 0; 
+}
+.radio + label {
+  position: relative;
+  padding: 3px 0 0 35px;
+  cursor: pointer;
+}
+.radio + label:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  width: 30px;
+  height: 23px;
+   box-shadow:
+       0 0 0 3px lightgrey;
+      background: url(../media/1.png) no-repeat 50% 50% ;
+}
+.radio + label:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  width: 30px;
+  height: 23px;
+  background: black;
+  opacity: 0;
+     box-shadow:
+       0 0 0 3px black;
+   
+}
+.radio:checked + label:after {
+  opacity: 0.5;
 }

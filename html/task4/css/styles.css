@@ -60,6 +60,7 @@ p{
   left: 9px;
   width: 8px;
   height: 8px;
+    
   
    box-shadow:
        0 0 0 5px white,
@@ -83,6 +84,9 @@ p{
    
 }
 .radio:checked + label:after {
+  opacity: 1;
+}
+.radio:not(:checked) + label:before {
   opacity: 1;
 }
 
