@@ -10,6 +10,44 @@ main{
     background-image: url(../media/bg.png) ;
 }
 
+.sect1{
+    margin-left: 35px;
+}
+.sect1_1{
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    background-color: black;
+    box-shadow: inset 2px -2px  white,
+    inset -2px 2px  lightgrey;
+    
+}
+.top{
+    padding: 0 20%;
+    color: aliceblue;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sect1_2{
+    width: 200px;
+    height: 25px;
+    color: antiquewhite;
+    background-color: black;
+    margin: 5px auto;
+    
+    box-shadow: inset 2px -2px  white,
+    inset -2px 2px  lightgrey;
+}
+
+img{
+    padding: 4px;
+    box-shadow: inset -2px 2px  lightgrey;
+    
+}
 .grid{
     
     display: grid;
@@ -17,7 +55,13 @@ main{
     grid-template-columns: repeat(10, 32px);
     grid-gap: 2px;
         position: relative;
-    margin-top: 100px;
+    margin-top: 30px;
+}
+.top2{
+    vertical-align: middle;
+    margin-left: 35px;
+    line-height: 25px;
+    
 }
 .grid div{
     background-color: #151515;
