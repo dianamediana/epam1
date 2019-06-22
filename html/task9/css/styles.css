@@ -27,7 +27,6 @@ main{
 }
 .cube{
     background: url(../media/cube.png) 50% 50%;
-    position: absolute;
     top: 0;
     
     right: 0;
@@ -36,7 +35,19 @@ main{
     z-index: 2;
     background-repeat: no-repeat;
 }
-
+.text{
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    width: 30px;
+    height: 15px;
+}
+.cube:hover .text{
+    display: block;
+}
+.r1:hover .text{
+    display: block;
+}
 .sec2_1{
     display: grid;
     height: 250px;
