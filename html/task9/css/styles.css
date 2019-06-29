@@ -1,7 +1,16 @@
 main{
     width: 768px;
     margin: 0 auto;
+    
+    font-family: "LaBrit";
+    
+        font-size:17px;
 }
+@font-face {
+    font-family: "LaBrit";
+    src: url(../fonts); /* Путь к файлу со шрифтом */
+    
+   }
 
 .all{
     display: grid;
