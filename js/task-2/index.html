@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task2</title>
+</head>
+<body>
+   
+   <script>
+	alert('Игра Угадайка. Угадайте целое число от 1 до 100! Введите q для выхода');	
+       answer = Math.floor(Math.random() * 100) + 1;
+    console.log(answer);
+       var a=1;
+       var b=100;
+       
+	do {
+        
+	
+	userAnswer = parseInt(prompt('Введите целое число от 1 до 100'));
+	if ((userAnswer >= 1) && (userAnswer <= 100)) {
+		if (answer == userAnswer) {
+			alert ('Поздравляю, Вы угадали!');
+			break;
+			}
+		else if (answer < userAnswer) {
+            
+			alert('Ваше число больше загаданного. Попробуйте еще раз! в диапазоне от'+ a + 'до' + (userAnswer-1));
+      b=userAnswer;
+        }
+		else
+			alert('Ваше число меньше загаданного. Попробуйте еще раз! в диапазоне от' + (userAnswer+1) +   ' до ' + b );
+       a=userAnswer;
+		}
+	else if ('q') {
+		alert('До свидания!');
+		break;
+		}
+	else
+		alert('Нужно ввести число от 1 до 100. Попробуйте еще раз')
+	}
+	while (answer !== userAnswer);
+</script>
+    <script src="index.js"></script>
+</body>
+</html>
